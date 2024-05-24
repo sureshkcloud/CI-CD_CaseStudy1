@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Color Changing Website</title>
+    <link rel="stylesheet" href="styles.css">
+    <script>
+        function changeColor() {
+            const colors = ['#FF5733', '#33FF57', '#3357FF', '#FF33A5', '#A533FF'];
+            document.body.style.backgroundColor = colors[Math.floor(Math.random() * colors.length)];
+        }
+        document.addEventListener('click', changeColor);
+    </script>
+</head>
+<body onload="changeColor()">
+    <div class="container">
+        <h1>Welcome to My WebApp for "CI-CD Class Case Study 1"</h1>
+        <p>Click anywhere to change the background color.</p>
+    </div>
+</body>
+</html>
+
